@@ -1,0 +1,273 @@
+* {
+  font-family: "Dosis";
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/******************NAV BAR*****************************************************/
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 60px;
+  align-items: center;
+  background-color: #a83fe4;
+  font-size: 19px;
+}
+
+
+
+.nav-button {
+  text-decoration: none;
+  letter-spacing: 2px;
+  border-right: 1px solid #dc9fff;
+  font-family: inherit;
+  padding: 0 35px !important;
+  color: white;
+  justify-self: center;
+}
+
+.nav-button:last-of-type {
+  border-right: none;
+}
+
+.nav-button:focus {
+  color: Black;
+}
+
+.nav-button:hover {
+  color: Black;
+}
+
+/**********************DROPDOWN SELECT******************************************/
+
+.dropdown-select {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 10;
+  -webkit-transition: opacity 600ms, visibility 600ms;
+  transition: opacity 600ms, visibility 600ms;
+}
+
+/********************************************************************************/
+
+/**********************HAMBERGER ICON********************************************/
+.container {
+  /* cursor: pointer; */
+  display: none;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+/*********************************************************************************/
+
+
+
+.content-items {
+  padding: 60px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**************************LOGO***************************************************/
+
+.dental-logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 10px solid #b19cd9;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  background-color: white;
+}
+
+.logo-container {
+  padding: 10px 0;
+}
+
+.address-phone-logo {
+  width: 50px;
+  vertical-align: middle;
+}
+
+.phone-address-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.address-phone {
+  padding: 20px;
+}
+
+/***********************MEDIA QUERIES*********************************************/
+
+#dots {
+  display: none;
+}
+
+
+
+
+@media (max-width: 620px) {
+  nav {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100vw;
+    /* z-index: 10; */
+    background: transparent;
+  }
+
+  #dots {
+    display: block;
+    position: fixed;
+    right: 10px;
+  }
+
+  #hazy-background {
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    opacity: 0.6;
+    z-index: 5;
+    background-color: white;
+  }
+
+
+  .nav-button {
+    display: none;
+  }
+
+  .container {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+
+  .dd-select {
+    display: block;
+    text-decoration: none;
+    background-color: black;
+    padding: 25px;
+    background: white;
+    border: 1px solid black;
+    width: 60vw;
+    opacity: 0.95;
+  }
+
+  .dd-select:first-of-type {
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+  }
+
+  .dd-select:last-of-type {
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+  }
+
+  .dropdown-select {
+    position: fixed;
+    right: 10px;
+    top: 60px;
+  }
+
+  .phone-address-container {
+    flex-wrap: wrap;
+    /* margin: 30px 0; */
+  }
+
+  .dental-logo {
+    position: relative;
+    /* top: 50px; */
+  }
+
+  .address-phone {
+    width: min-content;
+  }
+}
+
+/* @media (min-width:621px) {
+  #dots {
+    display: none;
+  }
+} */
+
+@media (max-width: 240px) {
+  .address-phone {
+    width: auto;
+  }
+
+  nav {
+    width: 100%;
+  }
+
+  .dd-select {
+    padding: 15px;
+  }
+
+  .footer-container {
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 1024px) {
+  nav {
+    justify-content: space-evenly;
+  }
+
+
+}
+
+/*********************************************************************************/
