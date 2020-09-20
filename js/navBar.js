@@ -4,15 +4,20 @@ let nav = document.getElementsByClassName('nav-button');
 let ddNav = document.getElementsByClassName('dd-select');
 let ffNav = document.getElementsByClassName('footer-button')
 
-let setNavEvents = (a, b) => {
+let setNavEvents = (a, b = false) => {
     for (let i of a) {
         i.addEventListener('click', (e) => {
-            e.preventDefault();
-            // console.log(i.getAttribute('href'))
-            let elementHref = i.getAttribute('href');
+
+            const elementHref = i.getAttribute('href');
+
+
+
             if (elementHref[0] === "#") {
-                let element = document.querySelector(i.getAttribute('href'))
-                let offsetTop = element.offsetTop;
+
+                e.preventDefault();
+
+                const element = document.querySelector(i.getAttribute('href'))
+                const offsetTop = element.offsetTop;
                 if (b) {
                     let dots = document.getElementById('dots');
                     myFunction(dots);
@@ -22,8 +27,9 @@ let setNavEvents = (a, b) => {
                     behavior: "smooth"
                 });
 
-            }
 
+
+            }
         })
     }
 }

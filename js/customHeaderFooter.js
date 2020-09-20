@@ -1,12 +1,13 @@
 class Header extends HTMLElement {
-    connectedCallback() {
-        this.innerHTML = `
+  constructor() {
+    super();
+    this.innerHTML = `
         <nav>
-        <a href="#home" class="nav-button">HOME</a>
-        <a href="#services" class="nav-button">SERVICES</a>
-        <a href="#tips" class="nav-button">TIPS & ADVICE</a>
-        <a href="#about-us" class="nav-button">ABOUT US</a>
-        <a href="#contact" class="nav-button">CONTACT</a>
+        <a href="${routeDestination("#home")}" class="nav-button">HOME</a>
+        <a href="${routeDestination("#services")}" class="nav-button">SERVICES</a>
+        <a href="${routeDestination("/html/tipsAndAdvice.html")}" class="nav-button">TIPS & ADVICE</a>
+        <a href="${routeDestination("/html/aboutUs.html")}" class="nav-button">ABOUT US</a>
+        <a href="${routeDestination("#contact")}" class="nav-button">CONTACT</a>
         <div id="dots" onclick="myFunction(this)"><img style="width:30px;" src="/images/dots.svg"></div>
       </nav>
 
@@ -15,27 +16,52 @@ class Header extends HTMLElement {
       <div id="hazy-background" onclick="contentRemoval(this)"></div> 
 
       <div id="dropdown-select" class="dropdown-select">
-        <a href="#home" class="dd-select">HOME</a>
+        <a href="${routeDestination("/")}" class="dd-select">HOME</a>
         <a href="#services" class="dd-select">SERVICES</a>
-        <a href="#tips" class="dd-select">TIPS & ADVICE</a>
-        <a href="#about-us" class="dd-select">ABOUT US</a>
+        <a href="${routeDestination("/html/tipsAndAdvice.html")}" class="dd-select">TIPS & ADVICE</a>
+        <a href="${routeDestination("/html/aboutUs.html")}" class="dd-select">ABOUT US</a>
         <a href="#contact" class="dd-select">CONTACT</a>
       </div>
 
+
+      <div class="logo-container">
+        <img src="/images/logo.png" class="dental-logo" alt="GMDC" />
+      </div>
+
+
+
+      <div class="phone-address-container">
+    <div class="address-phone">
+      ADDRESS
+      <p>
+        <img src="/images/location.svg" class="address-phone-logo" />CLINIC
+        LOCATION
+      </p>
+    </div>
+
+    <div class="address-phone">
+      CALL US
+      <p>
+        <img src="/images/phone.svg" class="address-phone-logo" /><a href="tel:+919436333040">9436333040</a>
+      </p>
+    </div>
+  </div>
+
         `
-    }
+  }
 }
 
 class Footer extends HTMLElement {
-    connectedCallback() {
-        this.innerHTML = `
+  constructor() {
+    super();
+    this.innerHTML = `
         <div class="footer-container">
     <div class="footer-mini-container">
       <p class="footer-p">OUR INFORMATION</p>
-      <a href="#home" class="footer-button">HOME</a>
+      <a href="${routeDestination("/")}" class="footer-button">HOME</a>
       <a href="#services" class="footer-button">SERVICES</a>
-      <a href="#tips" class="footer-button">TIPS & ADVICE</a>
-      <a href="#about-us" class="footer-button">ABOUT US</a>
+      <a href="${routeDestination("/html/tipsAndAdvice.html")}" class="footer-button">TIPS & ADVICE</a>
+      <a href="${routeDestination("/html/aboutUs.html")}" class="footer-button">ABOUT US</a>
       <a href="#contact" class="footer-button">CONTACT</a>
     </div>
     <div class="footer-mini-container">
@@ -71,8 +97,42 @@ class Footer extends HTMLElement {
     </div>
   </div>
         `
-    }
+  }
 }
 
 customElements.define('main-header', Header);
-customElements.define('main-footer', Footer)
+customElements.define('main-footer', Footer);
+
+function routeDestination(a) {
+  let currentPage = window.location.pathname;
+  // console.log(window.location.pathname)
+  // if (a[0] === "#") {
+  //   if (currentPage !== '/' || currentPage !== '/index.html') {
+  //     a = `/index.html${a}`;
+  //   } else {
+  //     return a
+  //   }
+  // }
+
+  // if (currentPage === '/' || currentPage === '/index.html') {
+  //   if (a[0] === "#") {
+  //     return a;
+  //   }
+  // }
+
+  // if (currentPage !== '/' || currentPage !== '/index.html') {
+  //   console.log(currentPage)
+  //   if (a[0] === "#") {
+  //     return `/index.html${a} `;
+  //   }
+  // }
+
+
+  // Resolve this issue
+
+
+
+  return a;
+}
+
+
