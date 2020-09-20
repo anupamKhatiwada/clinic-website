@@ -12,8 +12,8 @@
   <link rel="stylesheet" href="/css/main.css" />
   <link rel="stylesheet" href="/css/footer.css">
   <link rel="stylesheet" href="/css/imageSlider.css">
-  <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@600&display=swap" rel="stylesheet"> -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
   <link rel="stylesheet" href="/css/grid-content.css">
 </head>
 
@@ -22,43 +22,21 @@
 
   <!--------------------NAV-BAR------------------------------------------->
 
-  <nav id="nav">
+  <!-- <nav>
     <a href="#home" class="nav-button">HOME</a>
     <a href="#services" class="nav-button">SERVICES</a>
-    <a href="#tips" class="nav-button">TIPS & ADVICE</a>
+    <a href="./html/tipsAndAdvice.html" class="nav-button">TIPS & ADVICE</a>
     <a href="#about-us" class="nav-button">ABOUT US</a>
     <a href="#contact" class="nav-button">CONTACT</a>
-    <!-- <div class="container" id="hamburger" onclick="myFunction(this)">
-      <div class="bar1"></div>
-      <div class="bar2"></div>
-      <div class="bar3"></div>
-    </div> -->
     <div id="dots" onclick="myFunction(this)"><img style="width:30px;" src="/images/dots.svg"></div>
-  </nav>
+  </nav> -->
 
-  <div id="hazy-background" onclick="contentRemoval(this)"></div>
-
-
+  <main-header></main-header>
 
 
+  <a href="./html/tipsAndAdvice.html">GO TO TIPS</a>
 
-
-
-
-  <!--------------------------------------------------------------------->
-
-
-  <!-----------------CONTENT--------------------------------------------->
-  <div class="content" style="position: relative;"></div>
-
-
-
-
-
-
-
-
-  <!-----------------RESPONSIVE NAV-BAR---------------------------------->
+  <!-- <div id="hazy-background" onclick="contentRemoval(this)"></div> 
 
   <div id="dropdown-select" class="dropdown-select">
     <a href="#home" class="dd-select">HOME</a>
@@ -66,9 +44,15 @@
     <a href="#tips" class="dd-select">TIPS & ADVICE</a>
     <a href="#about-us" class="dd-select">ABOUT US</a>
     <a href="#contact" class="dd-select">CONTACT</a>
-  </div>
+  </div> -->
 
   <!-------------------------------------------------------------------->
+
+
+
+
+  <!--------------------Top Logo and address and phone information-------->
+
 
   <!------------------LOGO---------------------------------------------->
   <div class="logo-container">
@@ -98,7 +82,7 @@
   </div>
 
 
-
+  <!---------------------------------------------------------------------->
 
 
 
@@ -117,115 +101,116 @@
   </div>
 
 
+  <!---------------------------------------------------------------------->
 
 
 
 
 
+  <div class="page-content">
+
+    <div class="content-items" id="home">
+      <div class="grid-content-container">
+        <div class="grid-content one"></div>
+        <div class="grid-content two"></div>
+        <div class="grid-content three"></div>
+        <div class="grid-content four">
 
 
 
-  <div class="content-items" id="home">
-    <div class="grid-content-container">
-      <div class="grid-content one"></div>
-      <div class="grid-content two"></div>
-      <div class="grid-content three"></div>
-      <div class="grid-content four">
-
-
-
-        <p style="font-size: xx-large;"> <img src="/images/location2.svg" style="vertical-align: middle;" alt="">Find us
-        </p>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d895.404940930341!2d91.83092882924306!3d26.143937998966575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjbCsDA4JzM4LjIiTiA5McKwNDknNTMuMyJF!5e0!3m2!1sen!2sin!4v1599327127957!5m2!1sen!2sin"
-          width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-          tabindex="0"></iframe>
-        <label class="location-footer"><img src="/images/location.svg" class="contact-image"> #25A,Puberun Path,
-          Baghorbari
-          Tinali, Guwahati-791037</label>
+          <p style="font-size: xx-large;"> <img src="/images/location2.svg" style="vertical-align: middle;" alt="">Find
+            us
+          </p>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d895.404940930341!2d91.83092882924306!3d26.143937998966575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjbCsDA4JzM4LjIiTiA5McKwNDknNTMuMyJF!5e0!3m2!1sen!2sin!4v1599327127957!5m2!1sen!2sin"
+            width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+            tabindex="0"></iframe>
+          <label class="location-footer"><img src="/images/location.svg" class="contact-image"> #25A,Puberun Path,
+            Baghorbari
+            Tinali, Guwahati-791037</label>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="content-items" id="services">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam qui
-    doloremque hic eius est minus excepturi similique soluta, facilis voluptas
-    eveniet necessitatibus omnis laborum asperiores quaerat deserunt amet
-    consectetur. Suscipit? Lorem ipsum dolor sit amet consectetur, adipisicing
-    elit. Minus delectus asperiores dignissimos consequuntur suscipit animi
-    illum omnis eos veniam? Consectetur nobis itaque quae laborum eum
-    laboriosam voluptate esse. Aliquid, aperiam! Lorem ipsum dolor sit amet
-    consectetur adipisicing elit. Odio sed aliquid cupiditate dicta assumenda
-    asperiores officia sit laboriosam nulla! Quas deserunt voluptas ipsum
-    fugit fuga eaque est ea eum fugiat. Lorem ipsum dolor sit amet consectetur
-    adipisicing elit. Voluptas tempora blanditiis nihil veniam incidunt atque
-    culpa placeat quaerat iste, quidem, illum modi at natus! Vel, asperiores
-    voluptatem? Commodi, unde incidunt.
-  </div>
+    <div class="content-items" id="services">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam qui
+      doloremque hic eius est minus excepturi similique soluta, facilis voluptas
+      eveniet necessitatibus omnis laborum asperiores quaerat deserunt amet
+      consectetur. Suscipit? Lorem ipsum dolor sit amet consectetur, adipisicing
+      elit. Minus delectus asperiores dignissimos consequuntur suscipit animi
+      illum omnis eos veniam? Consectetur nobis itaque quae laborum eum
+      laboriosam voluptate esse. Aliquid, aperiam! Lorem ipsum dolor sit amet
+      consectetur adipisicing elit. Odio sed aliquid cupiditate dicta assumenda
+      asperiores officia sit laboriosam nulla! Quas deserunt voluptas ipsum
+      fugit fuga eaque est ea eum fugiat. Lorem ipsum dolor sit amet consectetur
+      adipisicing elit. Voluptas tempora blanditiis nihil veniam incidunt atque
+      culpa placeat quaerat iste, quidem, illum modi at natus! Vel, asperiores
+      voluptatem? Commodi, unde incidunt.
+    </div>
 
-  <div class="content-items" id="tips">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam qui
-    doloremque hic eius est minus excepturi similique soluta, facilis voluptas
-    eveniet necessitatibus omnis laborum asperiores quaerat deserunt amet
-    consectetur. Suscipit? Lorem ipsum dolor sit amet consectetur, adipisicing
-    elit. Minus delectus asperiores dignissimos consequuntur suscipit animi
-    illum omnis eos veniam? Consectetur nobis itaque quae laborum eum
-    laboriosam voluptate esse. Aliquid, aperiam! Lorem ipsum dolor sit amet
-    consectetur adipisicing elit. Odio sed aliquid cupiditate dicta assumenda
-    asperiores officia sit laboriosam nulla! Quas deserunt voluptas ipsum
-    fugit fuga eaque est ea eum fugiat. Lorem ipsum dolor sit amet consectetur
-    adipisicing elit. Voluptas tempora blanditiis nihil veniam incidunt atque
-    culpa placeat quaerat iste, quidem, illum modi at natus! Vel, asperiores
-    voluptatem? Commodi, unde incidunt.
-  </div>
+    <div class="content-items" id="tips">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam qui
+      doloremque hic eius est minus excepturi similique soluta, facilis voluptas
+      eveniet necessitatibus omnis laborum asperiores quaerat deserunt amet
+      consectetur. Suscipit? Lorem ipsum dolor sit amet consectetur, adipisicing
+      elit. Minus delectus asperiores dignissimos consequuntur suscipit animi
+      illum omnis eos veniam? Consectetur nobis itaque quae laborum eum
+      laboriosam voluptate esse. Aliquid, aperiam! Lorem ipsum dolor sit amet
+      consectetur adipisicing elit. Odio sed aliquid cupiditate dicta assumenda
+      asperiores officia sit laboriosam nulla! Quas deserunt voluptas ipsum
+      fugit fuga eaque est ea eum fugiat. Lorem ipsum dolor sit amet consectetur
+      adipisicing elit. Voluptas tempora blanditiis nihil veniam incidunt atque
+      culpa placeat quaerat iste, quidem, illum modi at natus! Vel, asperiores
+      voluptatem? Commodi, unde incidunt.
+    </div>
 
-  <div class="content-items" id="about-us">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam qui
-    doloremque hic eius est minus excepturi similique soluta, facilis voluptas
-    eveniet necessitatibus omnis laborum asperiores quaerat deserunt amet
-    consectetur. Suscipit? Lorem ipsum dolor sit amet consectetur, adipisicing
-    elit. Minus delectus asperiores dignissimos consequuntur suscipit animi
-    illum omnis eos veniam? Consectetur nobis itaque quae laborum eum
-    laboriosam voluptate esse. Aliquid, aperiam! Lorem ipsum dolor sit amet
-    consectetur adipisicing elit. Odio sed aliquid cupiditate dicta assumenda
-    asperiores officia sit laboriosam nulla! Quas deserunt voluptas ipsum
-    fugit fuga eaque est ea eum fugiat. Lorem ipsum dolor sit amet consectetur
-    adipisicing elit. Voluptas tempora blanditiis nihil veniam incidunt atque
-    culpa placeat quaerat iste, quidem, illum modi at natus! Vel, asperiores
-    voluptatem? Commodi, unde incidunt.
-  </div>
+    <div class="content-items" id="about-us">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam qui
+      doloremque hic eius est minus excepturi similique soluta, facilis voluptas
+      eveniet necessitatibus omnis laborum asperiores quaerat deserunt amet
+      consectetur. Suscipit? Lorem ipsum dolor sit amet consectetur, adipisicing
+      elit. Minus delectus asperiores dignissimos consequuntur suscipit animi
+      illum omnis eos veniam? Consectetur nobis itaque quae laborum eum
+      laboriosam voluptate esse. Aliquid, aperiam! Lorem ipsum dolor sit amet
+      consectetur adipisicing elit. Odio sed aliquid cupiditate dicta assumenda
+      asperiores officia sit laboriosam nulla! Quas deserunt voluptas ipsum
+      fugit fuga eaque est ea eum fugiat. Lorem ipsum dolor sit amet consectetur
+      adipisicing elit. Voluptas tempora blanditiis nihil veniam incidunt atque
+      culpa placeat quaerat iste, quidem, illum modi at natus! Vel, asperiores
+      voluptatem? Commodi, unde incidunt.
+    </div>
 
-  <div class="content-items" id="contact">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam qui
-    doloremque hic eius est minus excepturi similique soluta, facilis voluptas
-    eveniet necessitatibus omnis laborum asperiores quaerat deserunt amet
-    consectetur. Suscipit? Lorem ipsum dolor sit amet consectetur, adipisicing
-    elit. Minus delectus asperiores dignissimos consequuntur suscipit animi
-    illum omnis eos veniam? Consectetur nobis itaque quae laborum eum
-    laboriosam voluptate esse. Aliquid, aperiam! Lorem ipsum dolor sit amet
-    consectetur adipisicing elit. Odio sed aliquid cupiditate dicta assumenda
-    asperiores officia sit laboriosam nulla! Quas deserunt voluptas ipsum
-    fugit fuga eaque est ea eum fugiat. Lorem ipsum dolor sit amet consectetur
-    adipisicing elit. Voluptas tempora blanditiis nihil veniam incidunt atque
-    culpa placeat quaerat iste, quidem, illum modi at natus! Vel, asperiores
-    voluptatem? Commodi, unde incidunt.
-  </div>
+    <div class="content-items" id="contact">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam qui
+      doloremque hic eius est minus excepturi similique soluta, facilis voluptas
+      eveniet necessitatibus omnis laborum asperiores quaerat deserunt amet
+      consectetur. Suscipit? Lorem ipsum dolor sit amet consectetur, adipisicing
+      elit. Minus delectus asperiores dignissimos consequuntur suscipit animi
+      illum omnis eos veniam? Consectetur nobis itaque quae laborum eum
+      laboriosam voluptate esse. Aliquid, aperiam! Lorem ipsum dolor sit amet
+      consectetur adipisicing elit. Odio sed aliquid cupiditate dicta assumenda
+      asperiores officia sit laboriosam nulla! Quas deserunt voluptas ipsum
+      fugit fuga eaque est ea eum fugiat. Lorem ipsum dolor sit amet consectetur
+      adipisicing elit. Voluptas tempora blanditiis nihil veniam incidunt atque
+      culpa placeat quaerat iste, quidem, illum modi at natus! Vel, asperiores
+      voluptatem? Commodi, unde incidunt.
+    </div>
 
-  <div class="content-items">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam qui
-    doloremque hic eius est minus excepturi similique soluta, facilis voluptas
-    eveniet necessitatibus omnis laborum asperiores quaerat deserunt amet
-    consectetur. Suscipit? Lorem ipsum dolor sit amet consectetur, adipisicing
-    elit. Minus delectus asperiores dignissimos consequuntur suscipit animi
-    illum omnis eos veniam? Consectetur nobis itaque quae laborum eum
-    laboriosam voluptate esse. Aliquid, aperiam! Lorem ipsum dolor sit amet
-    consectetur adipisicing elit. Odio sed aliquid cupiditate dicta assumenda
-    asperiores officia sit laboriosam nulla! Quas deserunt voluptas ipsum
-    fugit fuga eaque est ea eum fugiat. Lorem ipsum dolor sit amet consectetur
-    adipisicing elit. Voluptas tempora blanditiis nihil veniam incidunt atque
-    culpa placeat quaerat iste, quidem, illum modi at natus! Vel, asperiores
-    voluptatem? Commodi, unde incidunt.
-  </div>
+    <div class="content-items">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam qui
+      doloremque hic eius est minus excepturi similique soluta, facilis voluptas
+      eveniet necessitatibus omnis laborum asperiores quaerat deserunt amet
+      consectetur. Suscipit? Lorem ipsum dolor sit amet consectetur, adipisicing
+      elit. Minus delectus asperiores dignissimos consequuntur suscipit animi
+      illum omnis eos veniam? Consectetur nobis itaque quae laborum eum
+      laboriosam voluptate esse. Aliquid, aperiam! Lorem ipsum dolor sit amet
+      consectetur adipisicing elit. Odio sed aliquid cupiditate dicta assumenda
+      asperiores officia sit laboriosam nulla! Quas deserunt voluptas ipsum
+      fugit fuga eaque est ea eum fugiat. Lorem ipsum dolor sit amet consectetur
+      adipisicing elit. Voluptas tempora blanditiis nihil veniam incidunt atque
+      culpa placeat quaerat iste, quidem, illum modi at natus! Vel, asperiores
+      voluptatem? Commodi, unde incidunt.
+    </div>
 
 
 
@@ -235,10 +220,10 @@
 
 
   <!---------------------FOOTER--------------------------------------------->
+  <main-footer></main-footer>
 
 
-
-  <div class="footer-container">
+  <!-- <div class="footer-container">
     <div class="footer-mini-container">
       <p class="footer-p">OUR INFORMATION</p>
       <a href="#home" class="footer-button">HOME</a>
@@ -278,13 +263,14 @@
       <div><span id="day"></span>:<span id="date"></span>:<span id="month"></span>:<span id="year"></span></div>
       <div>Made With: <img src="/images/javascript.svg" style="vertical-align: middle;"></div>
     </div>
-  </div>
+  </div> -->
 
 
 
   <!------------------------------------------------------------------------>
 
   <!---------------------SCRIPTS-------------------------------------------->
+  <script src="js/customHeaderFooter.js"></script>
   <script src="js/navBar.js"></script>
   <!------------------------------------------------------------------------>
 </body>

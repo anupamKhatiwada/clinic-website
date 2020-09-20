@@ -8,16 +8,21 @@ let setNavEvents = (a, b) => {
     for (let i of a) {
         i.addEventListener('click', (e) => {
             e.preventDefault();
-            let element = document.querySelector(i.getAttribute('href'))
-            let offsetTop = element.offsetTop;
-            if (b) {
-                let dots = document.getElementById('dots');
-                myFunction(dots);
+            // console.log(i.getAttribute('href'))
+            let elementHref = i.getAttribute('href');
+            if (elementHref[0] === "#") {
+                let element = document.querySelector(i.getAttribute('href'))
+                let offsetTop = element.offsetTop;
+                if (b) {
+                    let dots = document.getElementById('dots');
+                    myFunction(dots);
+                }
+                scroll({
+                    top: offsetTop,
+                    behavior: "smooth"
+                });
+
             }
-            scroll({
-                top: offsetTop,
-                behavior: "smooth"
-            });
 
         })
     }
