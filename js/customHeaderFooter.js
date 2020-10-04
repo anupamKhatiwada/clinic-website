@@ -3,7 +3,7 @@ class Header extends HTMLElement {
     super();
     this.innerHTML = `
         <nav>
-        <a href="${routeDestination("/")}" class="nav-button">HOME</a>
+        <a href="${routeDestination("")}" class="nav-button">HOME</a>
         <a href="${routeDestination("#services")}" class="nav-button">SERVICES</a>
         <a href="${routeDestination("html/tipsAndAdvice.html")}" class="nav-button">TIPS & ADVICE</a>
         <a href="${routeDestination("html/aboutUs.html")}" class="nav-button">ABOUT US</a>
@@ -16,7 +16,7 @@ class Header extends HTMLElement {
       <div id="hazy-background" onclick="contentRemoval(this)"></div> 
 
       <div id="dropdown-select" class="dropdown-select">
-        <a href="${routeDestination("/")}" class="dd-select">HOME</a>
+        <a href="${routeDestination("")}" class="dd-select">HOME</a>
         <a href="#services" class="dd-select">SERVICES</a>
         <a href="${routeDestination("html/tipsAndAdvice.html")}" class="dd-select">TIPS & ADVICE</a>
         <a href="${routeDestination("html/aboutUs.html")}" class="dd-select">ABOUT US</a>
