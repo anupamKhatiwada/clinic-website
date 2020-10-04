@@ -3,7 +3,7 @@ class Header extends HTMLElement {
     super();
     this.innerHTML = `
         <nav>
-        <a href="${routeDestination("#home")}" class="nav-button">HOME</a>
+        <a href="${routeDestination("/")}" class="nav-button">HOME</a>
         <a href="${routeDestination("#services")}" class="nav-button">SERVICES</a>
         <a href="${routeDestination("/html/tipsAndAdvice.html")}" class="nav-button">TIPS & ADVICE</a>
         <a href="${routeDestination("/html/aboutUs.html")}" class="nav-button">ABOUT US</a>
@@ -104,29 +104,9 @@ customElements.define('main-header', Header);
 customElements.define('main-footer', Footer);
 
 function routeDestination(a) {
-  let currentPage = window.location.pathname;
-  // console.log(window.location.pathname)
-  // if (a[0] === "#") {
-  //   if (currentPage !== '/' || currentPage !== '/index.html') {
-  //     a = `/index.html${a}`;
-  //   } else {
-  //     return a
-  //   }
-  // }
+  const currentPage = window.location.pathname;
 
-  // if (currentPage === '/' || currentPage === '/index.html') {
-  //   if (a[0] === "#") {
-  //     return a;
-  //   }
-  // }
-
-  // if (currentPage !== '/' || currentPage !== '/index.html') {
-  //   console.log(currentPage)
-  //   if (a[0] === "#") {
-  //     return `/index.html${a} `;
-  //   }
-  // }
-
+  console.log(currentPage)
 
   // Resolve this issue
 
