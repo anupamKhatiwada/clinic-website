@@ -8,7 +8,7 @@ class Header extends HTMLElement {
         <a href="${routeDestination("html/tipsAndAdvice.html")}" class="nav-button">TIPS & ADVICE</a>
         <a href="${routeDestination("html/aboutUs.html")}" class="nav-button">ABOUT US</a>
         <a href="${routeDestination("#contact")}" class="nav-button">CONTACT</a>
-        <div id="dots" onclick="myFunction(this)"><img style="width:30px;" src="/images/dots.svg"></div>
+        <div id="dots" onclick="myFunction(this)"><img style="width:30px;" src="images/dots.svg"></div>
       </nav>
 
 
@@ -60,8 +60,8 @@ class Footer extends HTMLElement {
       <p class="footer-p">OUR INFORMATION</p>
       <a href="${routeDestination("/")}" class="footer-button">HOME</a>
       <a href="#services" class="footer-button">SERVICES</a>
-      <a href="${routeDestination("/html/tipsAndAdvice.html")}" class="footer-button">TIPS & ADVICE</a>
-      <a href="${routeDestination("/html/aboutUs.html")}" class="footer-button">ABOUT US</a>
+      <a href="${routeDestination("html/tipsAndAdvice.html")}" class="footer-button">TIPS & ADVICE</a>
+      <a href="${routeDestination("html/aboutUs.html")}" class="footer-button">ABOUT US</a>
       <a href="#contact" class="footer-button">CONTACT</a>
     </div>
     <div class="footer-mini-container">
