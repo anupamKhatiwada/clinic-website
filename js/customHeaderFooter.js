@@ -8,7 +8,7 @@ class Header extends HTMLElement {
         <a href="${routeDestination("html/tipsAndAdvice.html")}" class="nav-button">TIPS & ADVICE</a>
         <a href="${routeDestination("html/aboutUs.html")}" class="nav-button">ABOUT US</a>
         <a href="${routeDestination("#contact")}" class="nav-button">CONTACT</a>
-        <div id="dots" onclick="myFunction(this)"><img style="width:30px;" src="/images/dots.svg"></div>
+        <div id="dots" onclick="myFunction(this)"><img style="width:30px;" src="images/dots.svg"></div>
       </nav>
 
 
