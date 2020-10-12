@@ -8,7 +8,7 @@ class Header extends HTMLElement {
         <a href="${routeDestination("html/tipsAndAdvice.html")}" class="nav-button">TIPS & ADVICE</a>
         <a href="${routeDestination("html/aboutUs.html")}" class="nav-button">ABOUT US</a>
         <a href="${routeDestination("#contact")}" class="nav-button">CONTACT</a>
-        <div id="dots" onclick="myFunction(this)"><img style="width:30px;" src="images/dots.svg"></div>
+        <div id="dots" onclick="myFunction(this)"><img style="width:30px;" src="/images/dots.svg"></div>
       </nav>
 
 
@@ -25,7 +25,7 @@ class Header extends HTMLElement {
 
 
       <div class="logo-container">
-        <img src="images/logo.png" class="dental-logo" alt="GMDC" />
+        <img src="/images/logo.png" class="dental-logo" alt="GMDC" />
       </div>
 
 
@@ -34,7 +34,7 @@ class Header extends HTMLElement {
     <div class="address-phone">
       ADDRESS
       <p>
-        <img src="images/location.svg" class="address-phone-logo" />CLINIC
+        <img src="/images/location.svg" class="address-phone-logo" />CLINIC
         LOCATION
       </p>
     </div>
@@ -42,7 +42,7 @@ class Header extends HTMLElement {
     <div class="address-phone">
       CALL US
       <p>
-        <img src="images/phone.svg" class="address-phone-logo" /><a href="tel:+919436333040">9436333040</a>
+        <img src="/images/phone.svg" class="address-phone-logo" /><a href="tel:+919436333040">9436333040</a>
       </p>
     </div>
   </div>
@@ -74,11 +74,11 @@ class Footer extends HTMLElement {
     </div>
     <div class="footer-mini-container">
       <p class="footer-p">CONTACT US</p>
-      <label class="footer-contact"><img src="images/pin.ico" class="contact-image"> #25A,Puberun Path, Baghorbari
+      <label class="footer-contact"><img src="/images/pin.ico" class="contact-image"> #25A,Puberun Path, Baghorbari
         Tinali, Guwahati-791037</label>
-      <label class="footer-contact"><img src="images/mobile-phone.ico" class="contact-image"><a class="contact-link"
+      <label class="footer-contact"><img src="/images/mobile-phone.ico" class="contact-image"><a class="contact-link"
           href="tel:+919436333040">9436333040</a></label>
-      <label class="footer-contact"><img src="images/globe-.ico" class="contact-image"><a href="index.html"
+      <label class="footer-contact"><img src="/images/globe.ico" class="contact-image"><a href="index.html"
           class="contact-link">
           guwahatimultispecialitydentalclinic.com</a></label>
     </div>
@@ -93,7 +93,7 @@ class Footer extends HTMLElement {
     <div class="footer-end">
       <div><span id="hour"></span>:<span id="min"></span>:<span id="sec"></span>:<span id="mer"></span></div>
       <div><span id="day"></span>:<span id="date"></span>:<span id="month"></span>:<span id="year"></span></div>
-      <div>Made With: <img src="images/javascript.svg" style="vertical-align: middle;"></div>
+      <div>Made With: <img src="/images/javascript.svg" style="vertical-align: middle;"></div>
     </div>
   </div>
         `
