@@ -25,7 +25,7 @@ class Header extends HTMLElement {
 
 
       <div class="logo-container">
-        <img src="images/logo.png" class="dental-logo" alt="GMDC" />
+        <img src="${routeDestination()}images/logo.png" class="dental-logo" alt="GMDC" />
       </div>
 
 
@@ -115,7 +115,7 @@ function routeDestination(a) {
 
 
 
-  return a;
+  return currentPage;
 }
 
 
