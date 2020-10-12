@@ -58,11 +58,11 @@ class Footer extends HTMLElement {
         <div class="footer-container">
     <div class="footer-mini-container">
       <p class="footer-p">OUR INFORMATION</p>
-      <a href="${routeDestination("/")}" class="footer-button">HOME</a>
-      <a href="#services" class="footer-button">SERVICES</a>
+      <a href="${routeDestination("")}" class="footer-button">HOME</a>
+      <a href="${routeDestination("#services")}" class="footer-button">SERVICES</a>
       <a href="${routeDestination("html/tipsAndAdvice.html")}" class="footer-button">TIPS & ADVICE</a>
       <a href="${routeDestination("html/aboutUs.html")}" class="footer-button">ABOUT US</a>
-      <a href="#contact" class="footer-button">CONTACT</a>
+      <a href="${routeDestination("#contact")}" class="footer-button">CONTACT</a>
     </div>
     <div class="footer-mini-container">
       <p class="footer-p">SERVICES</p>
@@ -74,11 +74,11 @@ class Footer extends HTMLElement {
     </div>
     <div class="footer-mini-container">
       <p class="footer-p">CONTACT US</p>
-      <label class="footer-contact"><img src="images/pin.ico" class="contact-image"> #25A,Puberun Path, Baghorbari
+      <label class="footer-contact"><img src="${routeDestination("")}images/pin.ico" class="contact-image"> #25A,Puberun Path, Baghorbari
         Tinali, Guwahati-791037</label>
-      <label class="footer-contact"><img src="images/mobile-phone.ico" class="contact-image"><a class="contact-link"
+      <label class="footer-contact"><img src="${routeDestination("")}images/mobile-phone.ico" class="contact-image"><a class="contact-link"
           href="tel:+919436333040">9436333040</a></label>
-      <label class="footer-contact"><img src="images/globe.ico" class="contact-image"><a href="index.html"
+      <label class="footer-contact"><img src="${routeDestination("")}images/globe.ico" class="contact-image"><a href="index.html"
           class="contact-link">
           guwahatimultispecialitydentalclinic.com</a></label>
     </div>
@@ -93,7 +93,7 @@ class Footer extends HTMLElement {
     <div class="footer-end">
       <div><span id="hour"></span>:<span id="min"></span>:<span id="sec"></span>:<span id="mer"></span></div>
       <div><span id="day"></span>:<span id="date"></span>:<span id="month"></span>:<span id="year"></span></div>
-      <div>Made With: <img src="images/javascript.svg" style="vertical-align: middle;"></div>
+      <div>Made With: <img src="${routeDestination("")}images/javascript.svg" style="vertical-align: middle;"></div>
     </div>
   </div>
         `
