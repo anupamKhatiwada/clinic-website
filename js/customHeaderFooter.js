@@ -103,7 +103,7 @@ class Footer extends HTMLElement {
 customElements.define('main-header', Header);
 customElements.define('main-footer', Footer);
 
-function routeDestination(a) {
+function routeDestination(item) {
   const currentPage = window.location.pathname;
 
   console.log(currentPage)
@@ -114,8 +114,13 @@ function routeDestination(a) {
 
 
 
+  // Construct the address to be returned using reference to the current page
 
-  return a;
+
+
+
+
+  return item;
 }
 
 
