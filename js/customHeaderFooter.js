@@ -17,15 +17,15 @@ class Header extends HTMLElement {
 
       <div id="dropdown-select" class="dropdown-select">
         <a href="${routeDestination("")}" class="dd-select">HOME</a>
-        <a href="#services" class="dd-select">SERVICES</a>
+        <a href="${routeDestination("#services")}" class="dd-select">SERVICES</a>
         <a href="${routeDestination("html/tipsAndAdvice.html")}" class="dd-select">TIPS & ADVICE</a>
         <a href="${routeDestination("html/aboutUs.html")}" class="dd-select">ABOUT US</a>
-        <a href="#contact" class="dd-select">CONTACT</a>
+        <a href="${routeDestination("#contact")}" class="dd-select">CONTACT</a>
       </div>
 
 
       <div class="logo-container">
-        <img src="${routeDestination()}images/logo.png" class="dental-logo" alt="GMDC" />
+        <img src="${routeDestination("")}images/logo.png" class="dental-logo" alt="GMDC" />
       </div>
 
 
@@ -34,7 +34,7 @@ class Header extends HTMLElement {
     <div class="address-phone">
       ADDRESS
       <p>
-        <img src="images/location.svg" class="address-phone-logo" />CLINIC
+        <img src="${routeDestination("")}images/location.svg" class="address-phone-logo" />CLINIC
         LOCATION
       </p>
     </div>
@@ -42,7 +42,7 @@ class Header extends HTMLElement {
     <div class="address-phone">
       CALL US
       <p>
-        <img src="images/phone.svg" class="address-phone-logo" /><a href="tel:+919436333040">9436333040</a>
+        <img src="${routeDestination("")}images/phone.svg" class="address-phone-logo" /><a href="tel:+919436333040">9436333040</a>
       </p>
     </div>
   </div>
@@ -115,7 +115,7 @@ function routeDestination(a) {
 
 
 
-  return currentPage;
+  return a;
 }
 
 
