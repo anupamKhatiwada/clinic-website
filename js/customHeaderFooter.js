@@ -25,7 +25,7 @@ class Header extends HTMLElement {
 
 
       <div class="logo-container">
-        <img src="/images/logo.png" class="dental-logo" alt="GMDC" />
+        <img src="images/logo.png" class="dental-logo" alt="GMDC" />
       </div>
 
 
@@ -34,7 +34,7 @@ class Header extends HTMLElement {
     <div class="address-phone">
       ADDRESS
       <p>
-        <img src="/images/location.svg" class="address-phone-logo" />CLINIC
+        <img src="images/location.svg" class="address-phone-logo" />CLINIC
         LOCATION
       </p>
     </div>
@@ -42,7 +42,7 @@ class Header extends HTMLElement {
     <div class="address-phone">
       CALL US
       <p>
-        <img src="/images/phone.svg" class="address-phone-logo" /><a href="tel:+919436333040">9436333040</a>
+        <img src="images/phone.svg" class="address-phone-logo" /><a href="tel:+919436333040">9436333040</a>
       </p>
     </div>
   </div>
