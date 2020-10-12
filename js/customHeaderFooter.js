@@ -109,6 +109,9 @@ function routeDestination(a) {
   console.log(currentPage)
 
   // Resolve this issue
+  if (currentPage === '/clinic-website/' || currentPage === '/') console.log(true)
+  else console.log(false)
+
 
 
 
