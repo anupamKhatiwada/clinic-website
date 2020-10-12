@@ -8,7 +8,7 @@ class Header extends HTMLElement {
         <a href="${routeDestination("html/tipsAndAdvice.html")}" class="nav-button">TIPS & ADVICE</a>
         <a href="${routeDestination("html/aboutUs.html")}" class="nav-button">ABOUT US</a>
         <a href="${routeDestination("#contact")}" class="nav-button">CONTACT</a>
-        <div id="dots" onclick="myFunction(this)"><img style="width:30px;" src="images/dots.svg"></div>
+        <div id="dots" onclick="myFunction(this)"><img style="width:30px;" src="${routeDestination("")}images/dots.svg"></div>
       </nav>
 
 
@@ -103,18 +103,21 @@ class Footer extends HTMLElement {
 customElements.define('main-header', Header);
 customElements.define('main-footer', Footer);
 
+
+
 function routeDestination(item) {
+  const directories = ['/css/', '/html/', '/images/', '/js/']
+
   const currentPage = window.location.pathname;
 
   console.log(currentPage)
 
-  // Resolve this issue
-  if (currentPage === '/clinic-website/' || currentPage === '/') console.log(true)
-  else console.log(false)
-
-
-
   // Construct the address to be returned using reference to the current page
+
+  // Basically for images. Resolves image issue but causes navigation problems. More genric solution needed.
+  for (let i of directories) {
+    if (currentPage.match(i)) return "../"
+  }
 
 
 
