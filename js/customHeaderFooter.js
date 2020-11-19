@@ -59,10 +59,10 @@ class Footer extends HTMLElement {
     <div class="footer-mini-container">
       <p class="footer-p">OUR INFORMATION</p>
       <a href="/" class="footer-button">HOME</a>
-      <a href="/clinic-website/index.html#services" class="footer-button">SERVICES</a>
-      <a href="/clinic-website/html/tipsAndAdvice.html" class="footer-button">TIPS & ADVICE</a>
-      <a href="/clinic-website/html/aboutUs.html" class="footer-button">ABOUT US</a>
-      <a href="/clinic-website/index.html#contact" class="footer-button">CONTACT</a>
+      <a href="/index.html#services" class="footer-button">SERVICES</a>
+      <a href="/html/tipsAndAdvice.html" class="footer-button">TIPS & ADVICE</a>
+      <a href="/html/aboutUs.html" class="footer-button">ABOUT US</a>
+      <a href="/index.html#contact" class="footer-button">CONTACT</a>
     </div>
     <div class="footer-mini-container">
       <p class="footer-p">SERVICES</p>
